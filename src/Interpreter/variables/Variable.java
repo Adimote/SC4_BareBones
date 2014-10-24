@@ -17,7 +17,7 @@ public class Variable {
         throw new VariableException(String.format("Variable type: %s does not have a 'clear' function",this.type));
     }
 
-    public String toString() {
+    @Override public String toString() {
         return "Null";
     }
 }

@@ -24,7 +24,7 @@ public class B_Integer extends Variable {
         return value;
     }
 
-    public String toString() {
+    @Override public String toString() {
         return Integer.toString(this.value);
     }
 }

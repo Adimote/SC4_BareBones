@@ -16,7 +16,7 @@ public class B_String extends Variable {
         this.value = value;
     }
 
-    public String toString() {
+    @Override public String toString() {
         return this.value;
     }
 }
