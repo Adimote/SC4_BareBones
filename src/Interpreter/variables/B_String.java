@@ -6,7 +6,7 @@ package Interpreter.variables;
  */
 public class B_String extends Variable {
     protected String type = "String";
-    private String value;
+    private String value = "";
 
     public String getValue() {
         return value;
@@ -14,5 +14,9 @@ public class B_String extends Variable {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public String toString() {
+        return this.value;
     }
 }

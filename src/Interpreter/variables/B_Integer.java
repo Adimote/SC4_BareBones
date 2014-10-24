@@ -6,7 +6,7 @@ package Interpreter.variables;
  */
 public class B_Integer extends Variable {
     protected String type = "Integer";
-    private int value;
+    private int value = 0;
 
     public void incr() {
         this.value ++;
@@ -22,5 +22,9 @@ public class B_Integer extends Variable {
 
     public int getValue() {
         return value;
+    }
+
+    public String toString() {
+        return Integer.toString(this.value);
     }
 }

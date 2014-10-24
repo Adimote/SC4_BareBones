@@ -16,4 +16,8 @@ public class Variable {
     public void clear() throws VariableException {
         throw new VariableException(String.format("Variable type: %s does not have a 'clear' function",this.type));
     }
+
+    public String toString() {
+        return "Null";
+    }
 }
